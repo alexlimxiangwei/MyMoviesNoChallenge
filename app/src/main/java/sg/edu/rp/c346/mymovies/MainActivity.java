@@ -51,8 +51,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
         lvMovie.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -72,20 +70,5 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-    //option menu
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.options, menu);
-        return true;
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here.
-        int id = item.getItemId();
 
-       // startActivity(new Intent(this,))
-
-        return super.onOptionsItemSelected(item);
-    }
 }
